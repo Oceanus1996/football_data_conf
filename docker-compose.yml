@@ -22,7 +22,7 @@ services:
       - 9000:9000
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
-      - ./data:/home/data
+      - ./nbs:/home/nbs
     environment:
       - CLUSTER_NAME=test
     env_file:
@@ -166,7 +166,7 @@ services:
     ports:
         - "8888:8888"
     volumes:
-        - ./data:/home/jovyan/work/data
+        - ./nbs:/home/jovyan/work/nbs
         - ./events:/tmp/spark-events
     
 
