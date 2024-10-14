@@ -168,5 +168,6 @@ services:
     volumes:
         - ./nbs:/home/jovyan/work/nbs
         - ./events:/tmp/spark-events
+    command: start-notebook.sh --ip=0.0.0.0 --allow-root --NotebookApp.token='' 
     
 
